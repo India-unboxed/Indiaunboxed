@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print the Cards</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      background: #fffaf1;
+      color: #18202a;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 7%;
+      background: #fffaf1;
+      border-bottom: 2px solid #18202a;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: #18202a;
+      text-decoration: none;
+      margin-left: 28px;
+      font-weight: 700;
+    }
+
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 900;
+      letter-spacing: -1px;
+    }
+
+    .logo span { color: #e85d04; }
+
+    nav a {
+      color: #18202a;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 60px 7%;
+    }
+
+    .box {
+      width: min(700px, 100%);
+      text-align: center;
+      border: 3px solid #18202a;
+      border-radius: 24px;
+      padding: 60px 35px;
+      background: #90be6d;
+      box-shadow: 9px 9px 0 #18202a;
+    }
+
+    .icon {
+      font-size: 5rem;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      line-height: .9;
+      letter-spacing: -4px;
+      margin-bottom: 22px;
+    }
+
+    h1 span { color: #e85d04; }
+
+    p {
+      max-width: 500px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      color: #414a54;
+    }
+
+    .pdf-button {
+      display: inline-block;
+      background: #e85d04;
+      color: white;
+      text-decoration: none;
+      font-weight: 900;
+      padding: 16px 28px;
+      border: 2px solid #18202a;
+      border-radius: 10px;
+      box-shadow: 5px 5px 0 #18202a;
+      transition: transform .15s, box-shadow .15s;
+    }
+
+    .pdf-button:hover {
+      transform: translate(3px, 3px);
+      box-shadow: 2px 2px 0 #18202a;
+    }
+
+    .note {
+      margin-top: 25px;
+      font-size: .85rem;
+      color: #5c6570;
+    }
+
+    footer {
+      background: #18202a;
+      color: white;
+      padding: 25px 7%;
+      text-align: center;
+    }
+    .primary { background: #e85d04; color: white; padding: 14px 24px;border: 2px solid #18202a;box-shadow: 4px 4px 0 #18202a;}
+    .secondary { background: #fff; padding: 14px 24px;border: 2px solid #18202a;box-shadow: 4px 4px 0 #18202a;}
+    .tertiary {background: #90be6d; color: white;padding: 14px 24px;border: 2px solid #18202a;box-shadow: 4px 4px 0 #18202a;}
+    
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">INDIA<span> UNBOXED</span></div>
+    <div>
+    <a class="primary" href="india_unboxed_homepage.html">Back to home</a>
+    <a class="secondary" href="india_unboxed_contact.html">Contact us</a>
+    <a class="tertiary" href="india_unboxed_instructions.html">How to play</a>
+  </div>
+  </nav>
+
+  <main>
+    <div class="box">
+      <div class="icon">🖨️</div>
+
+      <h1>GET YOUR CARDS FOR <span>FREE.</span></h1>
+
+      <p>
+        Download the printable PDF, print the cards, cut them out,
+        and you're ready to play India Unboxed.
+      </p>
+
+      <!-- TEMPORARY PDF LINK: replace the # with your PDF URL -->
+      <a class="pdf-button" href="#" target="_blank">
+        DOWNLOAD PRINTABLE PDF →
+      </a>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 India Unboxed · Made for curious people 🇮🇳
+  </footer>
+
+</body>
+</html>
